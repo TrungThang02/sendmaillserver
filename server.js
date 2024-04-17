@@ -19,7 +19,7 @@ app.post('/send-email', (req, res) => {
     });
 
     const mailOptions = {
-        from: 'your_email@gmail.trantrungthang01699516993@gmail.com', // Địa chỉ email của bạn
+        from: 'trantrungthang01699516993@gmail.com', // Sửa địa chỉ email này
         to: recipient,
         subject: subject,
         text: text
@@ -38,9 +38,4 @@ app.post('/send-email', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
-});
-
-
-app.get('/send-email', (req, res) => {
-    res.status(405).json({ error: 'Method Not Allowed' });
 });
